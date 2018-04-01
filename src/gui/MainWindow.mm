@@ -6,7 +6,7 @@
 #import <objc/runtime.h>
 #import <Cocoa/Cocoa.h>
 
-#include "Mainwindow.h"
+#include "MainWindow.h"
 
 namespace WalletGui {
 
