@@ -31,23 +31,20 @@ what changes you wish to commit using git add the -p switch. This
 walks you through all the changes and asks whether or not to
 include a particular change creating clean patches. 
 
-git diff will show you the changes
-in your tree. git diff --cached will show what is currently staged
+git diff will show you the changesin your tree.
+git diff --cached will show what is currently staged
 for commit. As you add hunks with git add -p, those hunks will
 "move" from the git diff output to the git diff --cached output,
 so you can see clearly what your commit is going to look like.
 
 ## Commits and pull requests
 
-Please document all commits in detail.
+Please document all commits and pull requests in detail.
 
 When submitting a pull request on Github, make sure your branch is
 rebased. No merge commits nor stray commits from other people in
 your submitted branch. You may be asked to rebase if there
 are conflicts which is a pain.
-
-PGP signing commits is strongly encouraged. That should explain why
-the previous paragraph is here.
 
 # Code of Conduct (42/C4)
 
