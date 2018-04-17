@@ -1,4 +1,4 @@
- # digitalnotewallet
+ # DigitalNoteWallet
 The GUI DigitalNoteWallet
  # Contributing to the DigitalNoteXDN Project
 
@@ -11,9 +11,10 @@ Things will be a bit slow to start off, so do not get impatient if your pull req
 
 The "DigitalNoteXDN core Team" is defined as the following GitHub users:
 
- •AuCRHI
- •rainmanp7
- 
+ 	AuCRHI
+ 	DrCryptoToad
+	rainmanp7
+  
 At the moment we are using 3 preferred builds to develop and test software.
 These are based on Linux (Lubuntu ver 17.1) and Mac OS Sierra and Mac OS High Sierra.
 
@@ -31,9 +32,10 @@ what changes you wish to commit using git add the -p switch. This
 walks you through all the changes and asks whether or not to
 include a particular change creating clean patches. 
 
-git diff will show you the changesin your tree.
-git diff --cached will show what is currently staged
-for commit. As you add hunks with git add -p, those hunks will
+      git diff will show you the changes in your tree.
+      git diff --cached will show what is currently staged for commit. 
+
+When you add hunks with git using -p as a switch, those hunks will
 "move" from the git diff output to the git diff --cached output,
 so you can see clearly what your commit is going to look like.
 
