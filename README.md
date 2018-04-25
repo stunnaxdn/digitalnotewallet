@@ -1,6 +1,8 @@
  # DigitalNoteWallet
 The GUI DigitalNoteWallet
  # Contributing to the DigitalNoteXDN Project
+ 
+ Always check the latest README.md at https://github.com/DigitalNoteXDN/digitalnotewallet/blob/master/README.md for updated instructions
 
 The new dev team are continually looking for skilled blockchain developers in the Cryptonight space. Not everyone is able to do this so do not dispair,
 as a start, we encourage you to help test the software, and report bugs to the team. Please see below for some guidelines. 
