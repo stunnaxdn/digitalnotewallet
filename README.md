@@ -17,11 +17,10 @@ The "DigitalNoteXDN core Team" is defined as the following GitHub users:
  	DrCryptoToad
 	rainmanp7
   
-At the moment we are using 3 preferred builds to develop and test software.
-These are based on Linux (Lubuntu ver 17.1) and Mac OS Sierra and Mac OS High Sierra.
+At the moment we are using preferred builds to develop and test software.
+These are based on Mac OS Sierra, Mac OS High Sierra, Windows 10 64bit and Linux (Lubuntu ver 17.1)
 
-We will not be supporting Windows development environments until someone can provide intructions on how
-to successfully build and complie the software error free without modifying the base code. 
+Qt Creator is used on Macs and Microsoft Visual Studio community 2017 for Windows
 
 All patches are to be sent via a Github pull request. 
 
