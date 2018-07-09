@@ -21,7 +21,58 @@
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
-    <layout class="QGridLayout" name="gridLayout" columnstretch="0,1,2">
+    <layout class="QHBoxLayout" name="horizontalLayout1">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Select pool</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="m_poolCombo">
+       <property name="minimumSize">
+        <size>
+         <width>175</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="editable">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="m_addPoolButton">
+       <property name="text">
+        <string>Add pool</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="m_clearPoolsButton">
+       <property name="text">
+        <string>Default Pools</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout" columnstretch="0,1">
      <property name="horizontalSpacing">
       <number>20</number>
      </property>
@@ -32,24 +83,10 @@
        </property>
       </widget>
      </item>
-     <item row="0" column="1">
-      <widget class="QComboBox" name="m_poolCombo">
-       <property name="editable">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
      <item row="1" column="0">
       <widget class="QLabel" name="label_2">
        <property name="text">
         <string>CPU cores</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="0">
-      <widget class="QLabel" name="label">
-       <property name="text">
-        <string>Select pool</string>
        </property>
       </widget>
      </item>
@@ -60,13 +97,6 @@
       <widget class="QLabel" name="m_stateLabel">
        <property name="text">
         <string>Stopped</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="2" alignment="Qt::AlignLeft">
-      <widget class="QPushButton" name="m_addPoolButton">
-       <property name="text">
-        <string>Add pool</string>
        </property>
       </widget>
      </item>
@@ -202,10 +232,27 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>m_clearPoolsButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MiningFrame</receiver>
+   <slot>clearPoolsClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>600</x>
+     <y>29</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>600</x>
+     <y>234</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>startStopClicked(QAbstractButton*)</slot>
   <slot>addPoolClicked()</slot>
+  <slot>clearPoolsClicked()</slot>
  </slots>
  <buttongroups>
   <buttongroup name="m_miningButtonGroup"/>

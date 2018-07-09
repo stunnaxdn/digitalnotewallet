@@ -21,6 +21,7 @@ public:
   ~PoolModel();
 
   void addPool(const QString& _host, quint16 _port);
+  void clearPools();
 
   QVariant data(const QModelIndex& _index, int _role) const Q_DECL_OVERRIDE;
   Qt::ItemFlags flags(const QModelIndex& _index) const Q_DECL_OVERRIDE;

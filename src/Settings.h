@@ -22,6 +22,7 @@ public:
 
   void setCommandLineParser(CommandLineParser* _cmd_line_parser);
   void load();
+  QStringList resetPools();
 
   bool hasAllowLocalIpOption() const;
   bool hasHideMyPortOption() const;

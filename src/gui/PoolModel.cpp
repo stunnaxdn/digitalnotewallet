@@ -21,6 +21,12 @@ void PoolModel::addPool(const QString& _host, quint16 _port) {
   setData(index(rowCount() - 1, 0), QString("%1:%2").arg(_host).arg(_port));
 }
 
+void PoolModel::clearPools() {
+	QStringList defaultpools = Settings::instance().resetPools();
+	PoolModel::setStringList(defaultpools);
+	Settings::instance().setMiningPoolList(defaultpools);
+}
+
 QVariant PoolModel::data(const QModelIndex& _index, int _role) const {
   if (!_index.isValid()) {
     return QVariant();

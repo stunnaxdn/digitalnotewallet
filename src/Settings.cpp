@@ -55,9 +55,8 @@ void Settings::load() {
   }
 
   QStringList defaultPoolList;
-  defaultPoolList << "stratum+tcp://pool.xdn.fairhash.org:4333" << "xdn.superpools.online:3333" << "pool.xdn.easyhash.pro:18881";
   if (!m_settings.contains(OPTION_MINING_POOLS)) {
-    setMiningPoolList(QStringList() << defaultPoolList);
+	  defaultPoolList = resetPools();
   } else {
     QStringList poolList = getMiningPoolList();
     Q_FOREACH (const QString& pool, defaultPoolList) {
@@ -70,6 +69,12 @@ void Settings::load() {
   }
 }
 
+QStringList Settings::resetPools() {
+	QStringList defaultPoolList;
+	defaultPoolList << defaultPoolList << "pool.xdn.fairhash.org:4333" << "xdn.superpools.online:3333" << "pool.xdn.easyhash.pro:18881";
+	setMiningPoolList(QStringList() << defaultPoolList);
+	return defaultPoolList;
+}
 
 bool Settings::isTestnet() const {
   Q_ASSERT(m_cmdLineParser != nullptr);

@@ -112,6 +112,10 @@ void MiningFrame::addPoolClicked() {
   }
 }
 
+void MiningFrame::clearPoolsClicked() {
+		m_poolModel->clearPools();
+}
+
 void MiningFrame::startStopClicked(QAbstractButton* _button) {
   if (_button == m_ui->m_startButton && m_ui->m_startButton->isChecked()) {
     startMining();
