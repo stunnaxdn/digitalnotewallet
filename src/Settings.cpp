@@ -55,7 +55,7 @@ void Settings::load() {
   }
 
   QStringList defaultPoolList;
-  defaultPoolList << "stratum+tcp://pool.xdn.fairhash.org:3333" << "xdn.superpools.online:3333";
+  defaultPoolList << "stratum+tcp://pool.xdn.fairhash.org:4333" << "xdn.superpools.online:3333" << "pool.xdn.easyhash.pro:18881";
   if (!m_settings.contains(OPTION_MINING_POOLS)) {
     setMiningPoolList(QStringList() << defaultPoolList);
   } else {
