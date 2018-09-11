@@ -9,6 +9,10 @@ as a start, we encourage you to help test the software, and report bugs to the t
 
 Things will be a bit slow to start off, so do not get impatient if your pull request is not initiated right away, in some cases it will require extensive testing before it is released or merged.
 
+ # Donations
+
+Please offer to support DigitalNote XDN. We have details on our website on how to donate to the devlopment fund to pay for exchanges, websites, seed nodes and marketing: https://www.digitalnote.biz :- Much appreciated!
+
 ## General guidelines
 
 The "DigitalNoteXDN core Team" is defined as the following GitHub users:
