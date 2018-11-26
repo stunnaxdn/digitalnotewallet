@@ -129,7 +129,7 @@ p, li { white-space: pre-wrap; }
         <string>Do not include message in blockchain</string>
        </property>
        <property name="text">
-        <string>Set self destruct time</string>
+        <string>Set self-destruct time</string>
        </property>
       </widget>
      </item>
